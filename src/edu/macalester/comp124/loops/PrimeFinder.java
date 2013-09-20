@@ -29,6 +29,42 @@ public class PrimeFinder extends ConsoleProgram {
 	 * @param maxNum The maximum number that should be considered as a prime.
 	 */
 	public int countPrimesUpTo(int maxNum) {
-        return 0;
+        PrimeChecker checker = new PrimeChecker();
+        int numPrimes = 0;
+        for (int i = 0; i <= maxNum; i++) {
+            if (checker.isPrime(i)) {
+                numPrimes++;
+            }
+        }
+        return numPrimes;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
