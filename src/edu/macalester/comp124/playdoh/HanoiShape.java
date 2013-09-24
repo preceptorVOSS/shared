@@ -5,31 +5,24 @@ import java.awt.*;
 /**
  * @author Shilad Sen
  */
-public class HanoiShape {
-    private Color color = Color.MAGENTA;
+public class HanoiShape extends Shape {
     private int height = 80;
     private int width = 80;
 
     public HanoiShape() {
+        this(Color.MAGENTA);
     }
 
     public HanoiShape(Color color) {
-        this.color = color;
+        this(color, 80, 80);
     }
 
     public HanoiShape(Color color, int height, int width) {
-        this.color = color;
+        setColor(color);
         this.height = height;
         this.width = width;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
 
     public int getHeight() {
         return height;
