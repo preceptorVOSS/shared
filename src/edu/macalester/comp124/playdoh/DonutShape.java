@@ -5,18 +5,31 @@ import java.awt.*;
 /**
  * @author Shilad Sen
  */
-public class DonutShape {
-    private Color color;
+public class DonutShape extends Shape {
+    private Color holeColor = null;
 
     public DonutShape(Color color) {
-        this.color = color;
+        this(color, null);
     }
 
-    public Color getColor() {
-        return color;
+    public DonutShape(Color color, Color holeColor) {
+        super(color);
+        this.holeColor = holeColor;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
+    public Color getHoleColor() {
+        return holeColor;
+    }
+
+    public void setHoleColor(Color holeColor) {
+        this.holeColor = holeColor;
+    }
+
+    @Override
+    public String toString() {
+        return "DonutShape{" +
+                "color=" + getColor() +
+                " holeColor=" + holeColor +
+                '}';
     }
 }

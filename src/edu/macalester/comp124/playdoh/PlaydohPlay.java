@@ -15,9 +15,10 @@ public class PlaydohPlay extends ConsoleProgram {
         println("color is now " + notYellowHanoi.getColor());
 
         HanoiShape tinyHanoi = new HanoiShape(Color.RED, 3, 5);
+        println("tinyHanoi is " + tinyHanoi);
 
         Color color = new Color(139, 69, 19);
         DonutShape chocolateDonut = new DonutShape(color);
-        println("i like my donuts: " + chocolateDonut.getColor());
+        println("i like my donuts: " + chocolateDonut);
     }
 }
