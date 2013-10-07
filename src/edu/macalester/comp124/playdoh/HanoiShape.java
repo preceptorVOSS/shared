@@ -18,6 +18,7 @@ public class HanoiShape extends Shape {
     }
 
     public HanoiShape(Color color, int height, int width) {
+        super(color);
         setColor(color);
         this.height = height;
         this.width = width;
