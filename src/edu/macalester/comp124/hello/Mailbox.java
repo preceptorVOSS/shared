@@ -3,7 +3,8 @@ package edu.macalester.comp124.hello;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
-import java.awt.*;
+import java.awt.Color;
+
 
 /**
  * @author Shilad Sen

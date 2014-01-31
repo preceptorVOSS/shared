@@ -1,5 +1,6 @@
 package edu.macalester.comp124.hello;
 
+import acm.program.ConsoleProgram;
 import acm.program.DialogProgram;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot;
@@ -7,7 +8,7 @@ import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot;
 /**
  * @author Shilad Sen
  */
-public class WikipediaReader extends DialogProgram {
+public class WikipediaReader extends ConsoleProgram {
     public void run() {
         MediaWikiBot bot = new MediaWikiBot("http://en.wikipedia.org/w/");
         String page = this.readLine("Enter page that should be fetched");
