@@ -34,20 +34,23 @@ public class Application
         Pound puppyHouse = new Pound();
 
         Puppy aPuppy = new Puppy();
+	    aPuppy.name = "Ghost";
         aPuppy.cuteness = 7;
         aPuppy.shoulderHeight = 5;
         aPuppy.sound = "Meow";
         aPuppy.weight = (0.25);
         puppyHouse.puppies.add(aPuppy);
 
-        aPuppy = new Puppy(30, 5.5, 1, "neigh");
+        aPuppy = new Puppy("Greywind", 30, 5.5, 1, "neigh");
         puppyHouse.puppies.add(aPuppy);
 
-        puppyHouse.puppies.add(new Puppy(20, 1, 3, "woof"));
+        puppyHouse.puppies.add(new Puppy("Lady", 20, 1, 3, "woof"));
 
         System.out.println("Average Height:   " + puppyHouse.getMeanHeight());
         System.out.println("Average Weight:   " + puppyHouse.getMeanWeight());
         System.out.println("Average Cuteness: " + puppyHouse.getMeanCuteness());
+
+	    System.out.println("The cutest puppy is " + puppyHouse.getCutest());
     }
 }
 
