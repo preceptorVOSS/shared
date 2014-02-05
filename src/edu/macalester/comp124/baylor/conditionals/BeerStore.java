@@ -42,25 +42,33 @@ public class BeerStore extends ConsoleProgram
 	    print("Do you work for Batman? (true/false) ");
         boolean worksForBatman = readBoolean();
 
-        if (age >= 18 && !(bac < 0.02))
-        {
-            println("You can buy this beer");
-        }
-        else if (age >= 18 || bac < 0.02)
-        {
-            println("You are so close but no, you may not have this");
-        }
-        else if (age < 18 && bac >= 0.02)
-        {
-            println("You are a total waster, i'm calling the cops");
-        }
-        else if (age < 18)
-        {
-            println("Go away, you are a baby");
-        }
-        else
-        {
-            println("Go home student, you are drunk");
-        }
+	    if (worksForBatman && (iq <= 50))
+	    {
+		    if (name.equals("Robin"))
+		    {
+			    println("No, Batsies said you can't have any");
+		    }
+		    else
+		    {
+		        println("Yes, yes you may buy beer");
+		    }
+	    }
+	    else if (iq <= 50)
+	    {
+		    println("Sure, those brain cells ain't goin' anywhere");
+	    }
+	    else
+	    {
+		    print("How much are you willing to pay me? ");
+		    double bribeSize = readDouble();
+		    if (bribeSize >= 1000000)
+		    {
+			    println("Here you go!");
+		    }
+		    else
+		    {
+		        println("Sorry bub, this beer's not for you");
+		    }
+	    }
     }
 }
