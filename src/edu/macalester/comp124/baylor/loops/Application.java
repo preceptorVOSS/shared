@@ -5,11 +5,17 @@ public class Application
     public static void main(String[] args)
     {
         Application app = new Application();
-        app.runPoundDemo();
+//        app.runPoundDemo();
 //        app.runForLoopDemo();
+	    app.runKittieDemo();
     }
 
-    private void runForLoopDemo()
+	private void runKittieDemo()
+	{
+
+	}
+
+	private void runForLoopDemo()
     {
         // print #s 16 - 4 by 2s
         //  and for each print 3-9 by 3s
@@ -50,7 +56,7 @@ public class Application
         System.out.println("Average Weight:   " + puppyHouse.getMeanWeight());
         System.out.println("Average Cuteness: " + puppyHouse.getMeanCuteness());
 
-	    System.out.println("The cutest puppy is " + puppyHouse.getCutest());
+	    System.out.println("The cutest puppy is " + puppyHouse.getCutest().name);
     }
 }
 
