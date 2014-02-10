@@ -1,18 +1,48 @@
 package edu.macalester.comp124.baylor.loops;
 
+import acm.program.ConsoleProgram;
+
+import java.util.List;
+
 public class Application
+	extends ConsoleProgram
 {
-    public static void main(String[] args)
-    {
-        Application app = new Application();
-//        app.runPoundDemo();
-//        app.runForLoopDemo();
-	    app.runKittieDemo();
-    }
+//    public static void main(String[] args)
+//    {
+//        Application app = new Application();
+////        app.runPoundDemo();
+////        app.runForLoopDemo();
+//	    app.runKittieDemo();
+//    }
+
+	public void run()
+	{
+		runKittieDemo();
+	}
 
 	private void runKittieDemo()
 	{
+		print("What is your IQ? ");
+		int iq = readInt();
+		print("Monthly salary? ");
+		double monthlyIncome = readDouble();
 
+		CatHouse kittyStore = new CatHouse();
+		println("We're gonna buy us some cats!");
+		boolean shouldBuyMoreCats = true;
+//		while (shouldBuyMoreCats)
+//		{
+			// get the cutest
+			List<Cat> currentPurchase = kittyStore.getCutest();
+			// can we afford them?
+			// are we still smarter than them
+//		}
+
+		println("Here are the cats we now love to death");
+		for (int i = 0; i < currentPurchase.size(); i++)
+		{
+			println(currentPurchase.get(i));
+		}
 	}
 
 	private void runForLoopDemo()
