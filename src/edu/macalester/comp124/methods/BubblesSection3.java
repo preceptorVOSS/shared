@@ -10,7 +10,7 @@ import java.awt.*;
 /**
  * @author Shilad Sen
  */
-public class BubblesSection2 extends GraphicsProgram {
+public class BubblesSection3 extends GraphicsProgram {
     public void run() {
         setSize(1024, 768);
         for (int i = 0; i < 100; i++) {
