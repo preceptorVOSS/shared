@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CatHouse
 {
-	public List<Cat> residents = new LinkedList<>();
+	public List<Cat> residents = new LinkedList<Cat>();
 	private Object cutest;
 
 	public CatHouse()
@@ -27,7 +27,7 @@ public class CatHouse
 
 	public List<Cat> getCutest()
 	{
-		List<Cat> theBest = new LinkedList<>();
+		List<Cat> theBest = new LinkedList<Cat>();
 		double highScore = Integer.MIN_VALUE;
 		for (int i=0; i < residents.size(); i++)
 		{
