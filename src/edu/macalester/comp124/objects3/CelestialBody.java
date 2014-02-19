@@ -11,6 +11,10 @@ import java.awt.*;
 public class CelestialBody extends GCompound {
 //    public CelestialBody() {}
 
+    public void makeHole() {
+        makeHole(Color.BLACK);
+    }
+
     public void makeHole(Color color) {
         double radius = getWidth() / 4;
         GOval oval = new GOval(radius*2, radius*2);
