@@ -10,10 +10,10 @@ import java.util.List;
  */
 public class GameData
 {
-	public List<???> getActions()
-	{
-
-	}
+//	public List<???> getActions()
+//	{
+//
+//	}
 
 	public String getEndingText(String endingID)
 	{
@@ -28,16 +28,16 @@ public class GameData
 		return "Sorry, you got an ending that doesn't exist.";
 	}
 
-	public List<Person> getLoveInterests()
-	{
-		List<Person> people = new LinkedList<>();
-		Person aPerson;
-
-		aPerson = new Person();
-		aPerson.name = "Darkness";
-		people.add(aPerson);
-
-		return people;
-	}
+//	public List<Person> getLoveInterests()
+//	{
+//		List<Person> people = new LinkedList<>();
+//		Person aPerson;
+//
+//		aPerson = new Person();
+//		aPerson.name = "Darkness";
+//		people.add(aPerson);
+//
+//		return people;
+//	}
 
 }

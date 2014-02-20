@@ -3,11 +3,11 @@ package edu.macalester.comp124.baylor.winterball;
 import acm.program.ConsoleProgram;
 import sun.org.mozilla.javascript.internal.ast.ForLoop;
 
+import java.util.List;
+
 public class Application
 	extends ConsoleProgram
 {
-	private Game theGame = new Game();
-
 	public void run()
 	{
 		println("  *********************************");
@@ -15,19 +15,21 @@ public class Application
 		println("  *********************************");
 		println();
 
-		while (!theGame.isOver())
-		{
-			println("Day " + theGame.getDay());
-			println("What do you want to do?");
-
-			int action = getAction(theGame.getActions());
-
-//			List<Person> boys = theGame.getLoveInterests();
-
-			println();
-		}
-		String ending = theGame.getEnding();
-		println(theGame.getEndingText(ending));
+//		Game theGame = new Game();
+//
+//		while (!theGame.isOver())
+//		{
+//			println("Day " + theGame.getDay());
+//			println("What do you want to do?");
+//
+//			int action = getAction(theGame.getActions());
+//
+////			List<Person> boys = theGame.getLoveInterests();
+//
+//			println();
+//		}
+//		String ending = theGame.getEnding();
+//		println(theGame.getEndingText(ending));
 	}
 
 	private String getAction(List<String> actions)
