@@ -13,4 +13,9 @@ abstract public class Feline
 	{
 		return "purrs";
 	}
+
+    @Override
+    public String stare() {
+        return "circles you";
+    }
 }

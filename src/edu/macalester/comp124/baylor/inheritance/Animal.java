@@ -11,4 +11,6 @@ abstract public class Animal
 
 	abstract public String pet();
 	abstract public String giveMeat();
+    abstract public String ride();
+    abstract public String stare();
 }

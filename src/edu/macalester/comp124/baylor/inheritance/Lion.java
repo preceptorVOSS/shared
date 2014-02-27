@@ -13,4 +13,9 @@ public class Lion
 	{
 		return "tears it apart";
 	}
+
+    @Override
+    public String ride() {
+        return "knocks you off";
+    }
 }
